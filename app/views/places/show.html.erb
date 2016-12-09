@@ -2,4 +2,7 @@
   <h1><%= @place.name %></h1>
   <p><em><%= @place.address %></em></p><br />
   <p><%= @place.description %></p><br />
+  <div class="pull-right">
+  <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
+  </div>
 </div>
