@@ -30,6 +30,8 @@ gem 'sass-rails'
 # Pagination gem
 gem 'will_paginate', '~> 3.1.1'
 
+gem 'simple_form'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
