@@ -3,6 +3,7 @@ class Place < ActiveRecord::Base
   # User Attribution
   belongs_to :user
   has_many :comments
+  has_many :photos
 
   # Geocoding
   geocoded_by :address

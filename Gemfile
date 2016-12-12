@@ -38,6 +38,10 @@ gem 'geocoder', '1.3.4'
 
 gem 'figaro', '>= 1.0.0'
 
+gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
+
+gem 'fog'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
