@@ -9,9 +9,10 @@
   background: #fff;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-  margin-top: 10px;
+  margin-top: 25px;
   margin-bottom: 15px;
   padding: 20px;
+  word-wrap: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -98,4 +99,8 @@ img.index-image {
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
   margin-bottom: 25px;
+}
+
+.space-it {
+  margin-bottom: 20px;
 }
