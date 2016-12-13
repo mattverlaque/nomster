@@ -2,20 +2,25 @@
   <div class="booyah-box col-xs-10 col-xs-offset-1">
     <h1><%= link_to place.name, place_path(place) %></h1>
     <p><em><%= place.address %></em></p><br />
-    <p><%= place.description %></p><br />
+    <p><%= place.description %></p>
 
     <% if place.user.present? %>
+      <br />
       <small><%= place.user.email %></small>
-    <% end %><br />
+      <br />
+    <% end %>
+    <hr />
 
      <% if place.photos.present? %><br />
-    <div class="col-xs-12">
-      <%= image_tag place.photos.last.picture %>
+    <div class="col-xs-12 col-md-6">
+      <h5><em>Most Recent Photo:</em></h5><br />
+      <%= image_tag place.photos.last.picture, class: "index-image" %>
     </div>
     <% end %>
 
     <% if place.comments.present? %><br />
-      <div class="col-xs-12">
+      <div class="col-xs-12 col-md-6">
+        <h5><em>Most Recent Comment:</em></h5><br />
         <blockquote>
           <% if place.comments.last.humanized_rating.present? %>
             <strong><%= place.comments.last.humanized_rating %></strong> - 
