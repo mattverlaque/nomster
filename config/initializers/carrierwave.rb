@@ -6,5 +6,6 @@ CarrierWave.configure do |config|
     #:region => 'us-east-1'
   }
   config.fog_directory  = ENV["AWS_BUCKET"]                     # required
+  config.enable_processing = true
 
 end
